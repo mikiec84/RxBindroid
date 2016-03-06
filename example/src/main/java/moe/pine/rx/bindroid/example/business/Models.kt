@@ -1,5 +1,6 @@
 package moe.pine.rx.bindroid.example.business
 
+import moe.pine.rx.bindroid.example.business.model.CountModel
 import moe.pine.rx.bindroid.example.business.model.ViewPathModel
 
 /**
@@ -8,4 +9,5 @@ import moe.pine.rx.bindroid.example.business.model.ViewPathModel
  */
 object Models {
     val viewPath by lazy { ViewPathModel() }
+    val count by lazy { CountModel() }
 }

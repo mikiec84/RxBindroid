@@ -18,7 +18,7 @@ class MainActivity : FragmentActivity() {
         this.bindViewModel()
     }
 
-    fun bindViewModel() {
+    private fun bindViewModel() {
         FragmentTransactionViewModel(Models.viewPath).subscribe(this)
     }
 }
