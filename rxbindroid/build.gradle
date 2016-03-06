@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
 
 group   = 'moe.pine.rxbindroid'
-version = '0.0.1'
+version = VERSION_NAME
 
 android {
     compileSdkVersion 23
@@ -33,13 +34,4 @@ dependencies {
     }
 }
 
-publish {
-    userOrg        = 'pinemz'
-    groupId        = project.group
-    artifactId     = 'rxbindroid'
-    publishVersion = project.version
-    desc           = 'Bind Observable for Android Activity / Fragment / View Lifecycles'
-    website        = 'https://github.com/pine613/RxBindroid'
-    licences       = ["Apache-2.0"]
-    dryRun         = false
-}
+apply from: "${rootProject.projectDir}/gradle/bintray.gradle"
