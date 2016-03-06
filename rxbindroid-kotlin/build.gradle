@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
+
+group   = 'moe.pine.rxbindroid'
+version = '0.0.1'
 
 android {
     compileSdkVersion 23
@@ -27,4 +31,19 @@ dependencies {
     testCompile "org.powermock:powermock-core:$powermock_version"
     testCompile "org.powermock:powermock-api-mockito:$powermock_version"
     testCompile "org.powermock:powermock-module-junit4:$powermock_version"
+}
+
+publish {
+    userOrg        = 'pinemz'
+    groupId        = project.group
+    artifactId     = 'rxbindroid-kotlin'
+    publishVersion = project.version
+    desc           = 'Bind Observable for Android Activity / Fragment / View Lifecycles'
+    website        = 'https://github.com/pine613/RxBindroid'
+    licences       = ["Apache-2.0"]
+    dryRun         = false
+}
+
+afterEvaluate {
+    tasks.findByPath(":rxbindroid-kotlin:mavenAndroidJavadocs").enabled = false
 }

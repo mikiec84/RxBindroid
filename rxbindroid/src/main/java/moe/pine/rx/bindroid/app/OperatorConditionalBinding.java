@@ -24,7 +24,7 @@ import rx.internal.util.UtilityFunctions;
 /**
  * Ties a source sequence to the given target object using a predicate. If the predicate fails
  * to validate, the sequence unsubscribes itself and releases the bound reference.
- * <p/>
+ * <p>
  * You can also pass in an optional predicate function, which whenever it evaluates to false
  * on the target object, will also result in the operator unsubscribing from the sequence.
  *

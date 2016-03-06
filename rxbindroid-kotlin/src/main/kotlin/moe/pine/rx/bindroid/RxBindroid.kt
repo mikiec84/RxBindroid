@@ -9,6 +9,7 @@ import rx.Observable
  * RxBindroid Extensions for Observable
  * Created by pine on 2016/03/06.
  */
+
 fun <T> Observable<T>.bindActivity(activity: Activity): Observable<T> {
     return RxBindroid.bindActivity(activity, this)
 }

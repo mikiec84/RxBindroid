@@ -32,13 +32,15 @@ public final class ViewObservable {
      * This helper will schedule the given sequence to be observed on the main UI thread and ensure
      * that no notifications will be forwarded to the view in case it gets detached from its the window.
      * <p>
-     * Unlike {@link rx.android.app.AppObservable#bindActivity} or {@link rx.android.app.AppObservable#bindFragment}, you don't have to unsubscribe the returned {@code Observable}
+     * Unlike {@link moe.pine.rx.bindroid.app.AppObservable#bindActivity} or {@link moe.pine.rx.bindroid.app.AppObservable#bindFragment}, you don't have to unsubscribe the returned {@code Observable}
      * on the detachment. {@link #bindView} does it automatically.
      * That means that the subscriber doesn't see further sequence even if the view is recycled and
      * attached again.
      *
+     * @param <T> observable type
      * @param view the view to bind the source sequence to
      * @param source the source sequence
+     * @return view bound observable
      */
     public static <T> Observable<T> bindView(View view, Observable<T> source) {
         if (view == null || source == null)

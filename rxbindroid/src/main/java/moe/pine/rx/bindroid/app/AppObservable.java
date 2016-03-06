@@ -58,8 +58,10 @@ public final class AppObservable {
      * make sure to bind to new instances of the activity again, e.g. after going through configuration changes.
      * Refer to the samples project for actual examples.
      *
+     * @param <T> observable type
      * @param activity the activity to bind the source sequence to
      * @param source   the source sequence
+     * @return activity bound observable
      */
     public static <T> Observable<T> bindActivity(Activity activity, Observable<T> source) {
         Assertions.assertUiThread();
@@ -78,8 +80,10 @@ public final class AppObservable {
      * for retained fragments, in order to not leak any references to the host activity or the fragment.
      * Refer to the samples project for actual examples.
      *
+     * @param <T> observable type
      * @param fragment the fragment to bind the source sequence to
      * @param source   the source sequence
+     * @return fragment bound observable
      */
     public static <T> Observable<T> bindFragment(Fragment fragment, Observable<T> source) {
         Assertions.assertUiThread();
@@ -90,6 +94,10 @@ public final class AppObservable {
     /**
      * Binds the given source sequence to a support-v4 fragment.
      *
+     * @param <T> observable type
+     * @param fragment the fragment to bind the source sequence to
+     * @param source   the source sequence
+     * @return fragment bound observable
      * @see #bindFragment(Fragment, Observable)
      */
     public static <T> Observable<T> bindSupportFragment(android.support.v4.app.Fragment fragment, Observable<T> source) {
