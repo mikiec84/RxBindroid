@@ -1,4 +1,4 @@
-# RxBindroid
+# RxBindroid [![Build Status](https://travis-ci.org/pine613/RxBindroid.svg?branch=master)](https://travis-ci.org/pine613/RxBindroid)
 Bind Observable for Android Activity / Fragment / View Lifecycles
 
 ## Getting Started
