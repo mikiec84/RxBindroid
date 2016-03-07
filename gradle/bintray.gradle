@@ -17,7 +17,7 @@ bintray {
         repo = 'maven'
         name = project.name
         desc = 'Bind Observable for Android Activity / Fragment / View Lifecycles'
-        licenses = ['BSD 2-Clause']
+        licenses = ['Apache-2.0']
         vcsUrl = siteUrl
         issueTrackerUrl = 'https://github.com/pine613/RxBindroid/issues'
         publicDownloadNumbers = true
