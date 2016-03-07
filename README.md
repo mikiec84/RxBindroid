@@ -2,8 +2,6 @@
 Bind Observable for Android Activity / Fragment / View Lifecycles
 
 ## Getting Started
-**Work in progress**
-
 Please type it in your build.gradle file.
 
 ```groovy
