@@ -60,6 +60,12 @@ observable.bindView(view).subscribe { view.text = it }
 $ ./gradlew clean test
 ```
 
+## Upload to Bintray
+
+```
+$ ./gradlew clean assemble bintrayUpload
+```
+
 ## License
 RxBindroid is based on [RxAndroid#v0.25.0](https://github.com/ReactiveX/RxAndroid/tree/v0.25.0).
 Thank you.
