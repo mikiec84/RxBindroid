@@ -19,6 +19,8 @@ dependencies {
 ### Java
 
 ```java
+import moe.pine.rx.bindroid.RxBindroid;
+
 final TextView view = (TextView)this.findViewById(R.id.text_view_hello);
 Observable<String> observable = Observable.just("Hello");
 
@@ -35,9 +37,12 @@ RxBindroid.bindView(view, observable).subscribe(new Action1<String>() {
 ### Kotlin
 
 ```kotlin
+import moe.pine.rx.bindroid.bindView
+
 val view = this.findViewById(R.id.text_view_hello) as TextView
 val observable = Observable.just("Hello")
 
+// It will call `unsubscribe` automatically.
 observable.bindView(view).subscribe { view.text = it }
 ```
 
