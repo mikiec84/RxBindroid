@@ -1,6 +1,7 @@
 buildscript {
     ext.kotlin_version = '1.0.1-2'
     ext.powermock_version = '1.6.4'
+    ext.rxjava_version = '1.1.2'
 
     repositories {
         jcenter()

@@ -20,7 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'io.reactivex:rxjava:1.1.1'
+    compile "io.reactivex:rxjava:$rxjava_version"
     compile 'io.reactivex:rxandroid:1.1.0'
     testCompile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
