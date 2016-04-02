@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile 'moe.pine.rxbindroid:rxbindroid:0.1.1'
-    compile 'moe.pine.rxbindroid:rxbindroid-kotlin:0.1.1' // for Kotlin
+    compile 'moe.pine.rxbindroid:rxbindroid:0.1.2'
+    compile 'moe.pine.rxbindroid:rxbindroid-kotlin:0.1.2' // for Kotlin
 }
 ```
 
