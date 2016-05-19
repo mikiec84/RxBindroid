@@ -1,4 +1,4 @@
-# RxBindroid [![Bintray](https://img.shields.io/bintray/v/pinemz/maven/rxbindroid.svg?style=flat-square)](https://bintray.com/pinemz/maven/rxbindroid/view) [![Bintray](https://img.shields.io/bintray/v/pinemz/maven/rxbindroid-kotlin.svg?style=flat-square)](https://bintray.com/pinemz/maven/rxbindroid-kotlin/view) [![Build Status](https://img.shields.io/travis/pine613/RxBindroid/master.svg?style=flat-square)](https://travis-ci.org/pine613/RxBindroid)
+# RxBindroid [![Bintray](https://img.shields.io/bintray/v/pinemz/maven/rxbindroid.svg?style=flat-square)](https://bintray.com/pinemz/maven/rxbindroid/view) [![Bintray](https://img.shields.io/bintray/v/pinemz/maven/rxbindroid-kotlin.svg?style=flat-square)](https://bintray.com/pinemz/maven/rxbindroid-kotlin/view) [![Build Status](https://img.shields.io/travis/pine/RxBindroid/master.svg?style=flat-square)](https://travis-ci.org/pine/RxBindroid)
 Bind Observable for Android Activity / Fragment / View Lifecycles
 
 ## Getting Started
