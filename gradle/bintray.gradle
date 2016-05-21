@@ -1,8 +1,8 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-def siteUrl = 'https://github.com/pine613/RxBindroid'
-def gitUrl = 'https://github.com/pine613/RxBindroid.git'
+def siteUrl = 'https://github.com/pine/RxBindroid'
+def gitUrl = 'https://github.com/pine/RxBindroid.git'
 
 bintray {
     user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
@@ -19,7 +19,7 @@ bintray {
         desc = 'Bind Observable for Android Activity / Fragment / View Lifecycles'
         licenses = ['Apache-2.0']
         vcsUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/pine613/RxBindroid/issues'
+        issueTrackerUrl = 'https://github.com/pine/RxBindroid/issues'
         publicDownloadNumbers = true
 
         version {
